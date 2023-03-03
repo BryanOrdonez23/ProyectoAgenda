@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>3. Ejecución</title>
+	<!-- Incluimos Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<!-- Agregamos un estilo personalizado -->
+	<style>
+		.logo {
+			height: 50px;
+			margin-right: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Agregamos el logo -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">
+			<img class="logo" src="/unl.png" alt="Logo de la empresa">
+			Fase de ejecución del proyecto.
+		</a>
+	</nav>
+	<div class="container">
+		<h1>Como se lleva a cabo el proyecto de acuerdo a la metodología de desarrollo seleccionada</h1> <br>
+
+		<p style="text-align: justify;">La metodología de desarrollo que se seleccionó para el proyecto de software se
+			denomina ICONIX es una metodología pesada-ligera de Desarrollo del Software que se halla a medio camino
+			entre un RUP (Rational Unified Process) y un XP (eXtreme Programming).</p>
+		<p style="text-align: justify;"> El Acta de Constitución es el proceso de desarrollar un documento que autoriza
+			formalmente la existencia de un proyecto y confiere al director del proyecto la autoridad para asignar los
+			recursos de la organización a las actividades del proyecto. Además, establece una relación de colaboración
+			entre la organización ejecutora y la organización solicitante.</p>
+		<p> Según el PMBOK y Iconix el Acta de constitución debe de proporcionar lo siguiente:</p>
+		<img class="ICONIX" src="/ICONIX.jpg" alt="Proceso Iconix"><br><br>
+		<h3>Fases</h3> <br><br>
+		<ol class="list-group">
+			<li class="list-group-item" style="text-align: justify;"><b>1. Análisis de Requisitos: </b> En esta primera
+				fase se realiza un Modelo de Dominio, que no es más que un Diagrama de Clases extremadamente
+				simplificado. Este modelo contiene únicamente aquellos objetos de la vida real cuyo comportamiento o
+				datos deben ser almacenados en el sistema.
+				Requisitos nuevos o modificados Sistema nuevo o modificado Proceso de Desarrollo de Software Requisitos
+				nuevos o modificados Sistema nuevo o modificado Proceso de Desarrollo de Software A partir de este
+				pequeño modelo, se realiza un pequeño prototipo basándose en la storyboard de la interfaz gráfica
+				obtenida previamente, el cual se mostrará al cliente y se refinó en sucesivas reuniones. Normalmente
+				este prototipo suele converger en dos o tres iteraciones.
+				Una vez el prototipo ya es final y se han obtenido todos los requisitos del sistema por parte del
+				cliente, se procede a realizar los casos de uso. Estos diagramas de casos de uso se agrupan en diagramas
+				de paquetes (es decir, utilizan referencias entre diagramas de casos de uso para simplificar su lectura)
+				y se asocia cada requisito a un caso de uso para obtener la ya mencionada anteriormente trazabilidad.
+			</li>
+			<li class="list-group-item" style="text-align: justify;"><b>2. Análisis y Diseño Preliminar: </b> A partir
+				de cada caso de uso se obtienen sus correspondientes fichas de caso de uso. Cabe destacar que estas
+				fichas no pertenecen al UML. La ficha está formada por un nombre, que suele ser el del caso de uso,
+				posee una breve descripción (generalmente en vista usuario, es decir, que hace de forma intuitiva, no
+				como), una precondición que debe cumplir antes de iniciarse, una postcondición que debe cumplir al
+				terminar si termina correctamente, un flujo normal que sigue el sistema en caso de que todo vaya
+				correctamente y un flujo alternativo en caso de que haya cualquier problema. El resto de campos son
+				opcionales.
+				Después será necesario realizar lo que se conoce como Diagrama de Robustez, el cual pertenece al proceso
+				Iconix y tampoco forma parte del UML. El objetivo del diagrama de robustez es añadir nuevas relaciones a
+				los diagramas de clase, de forma que ya tendremos un esqueleto aceptable de la arquitectura y del diseño
+				a partir del cual podremos proseguir nuestro proceso. Con esto y las fichas, refinamos el diagrama de
+				clases tanto como sea necesario y obtenemos una nueva versión preparada para la siguiente fase.
+			</li>
+			<li class="list-group-item" style="text-align: justify;"><b>3. Diseño: </b> En esta fase se procede a
+				realizar los diagramas de secuencia, los cuales derivan directamente de las fichas de caso de uso.
+				Obsérvese como, los diagramas de secuencia se relacionan con fichas de caso de uso que se relacionan con
+				casos de uso que se relacionan con requisitos. Esto implica que una vez finalizado el diseño, tras
+				refinar nuevamente el diagrama de clases, podremos verificarlo directamente gracias a este factor de
+				trazabilidad, y prepararnos para la siguiente fase. En caso de que no estemos satisfechos con el
+				resultado, será necesario repasar todo el proceso hasta que éste sea correcto. Es vital que los
+				requisitos se satisfagan correctamente para el éxito del proyecto.
+			</li>
+			<li class="list-group-item" style="text-align: justify;"><b>4. Implementación: </b> De cara a poder
+				distribuir el software correctamente, puede ser adecuado realizar un diagrama de componentes en algunos
+				casos, pero no siempre es necesario. En cualquier caso, aquí es donde se escribe el código tal y como
+				fue especificado en las fases anteriores y se planean las pruebas basándonos en los requisitos
+				iniciales, al nivel que fuese necesario. Aquí es donde hacemos uso real de la trazabilidad y donde
+				realmente ponemos en práctica esa garantía de calidad que tanto hemos mencionado. Después de tener un
+				buen diseño, es cuestión de crear un buen software a partir de ese diseño, y mediante los testeos y
+				pruebas adecuados podemos garantizar que el sistema final cumple con los requisitos iniciales y por
+				tanto proceder a su entrega. </li>
+		</ol>
+		<!-- Incluimos los scripts de Bootstrap -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@2.9.3/dist/umd/popper.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
